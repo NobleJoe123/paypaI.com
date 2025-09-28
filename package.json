@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.6"
+  },
+  "name": "paypal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon main.js",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NobleJoe123/paypaI.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NobleJoe123/paypaI.com/issues"
+  },
+  "homepage": "https://github.com/NobleJoe123/paypaI.com#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
